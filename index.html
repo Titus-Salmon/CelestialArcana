@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<style>
+    .selected {
+    background-color:aqua;
+    color:red;
+    font-weight:bold;
+    }
+</style>
+
+
+<!-- ng-app designates ROOT ELEMENT of the ANGULAR APPLICATION - typically placed at top in <html> or <body> tag -->
+<html ng-app="barebonesAngularApp">
+<!-- ng-app designates ROOT ELEMENT of the ANGULAR APPLICATION - typically placed at top in <html> or <body> tag -->
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Celtic Cross Spread (7-Card Spread)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller1.js"></script>
+    
+</head>
+<body ng-controller="theThingcontroller1 as tTc1">
+    
+<!-- IGNORE THESE, just for practice -->
+    {{1/7}}
+    {{blah1}}
+<!-- IGNORE THESE, just for practice -->   
+    
+<!-- "Numerical Value = " -->
+    {{tTc1.blah2}}
+<!-- "Numerical Value = " -->
+
+    
+    <!-- displays value of random # after clicking the "whateverClick1" button ("Draw a card") -->
+    {{MajArcRandomDraw}}
+    <!-- displays value of random # after clicking the "whateverClick1" button ("Draw a card") -->
+    
+    <input type="button" ng-click="whateverClick1()" value="Draw a card">
+    
+    <table class = "table table-striped">
+        <th>Trump Number</th>
+        <th>Trump Name</th>
+        <th>Hebraic Alphabet Attribution</th>
+        <th>Elemental/Planetary Attribution</th>
+        <th>Celestial Functionary Class</th>
+        <tr ng-repeat="trump in trumps">     
+            <td>
+                {{trump.ID}}
+            </td>
+            <td>
+                {{trump.TrumpName}}
+            </td>
+            <td>
+                {{trump.AlefBeit}}
+            </td>
+            <td>
+                {{trump.elementalPlanetary}}
+            </td>
+            <td>
+                {{trump.celestialFunctionay}}
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
