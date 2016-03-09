@@ -49,8 +49,10 @@
             <td>
                 {{trump.ID}}
             </td>
-            <td ng-model="bgcolor" ng-style="customestyle">
+<!-- ****PROBLEM**** - this is why the random event triggers whole column highlight, instead of single cell -->
+            <td ng-style="customestyle">
                 {{trump.TrumpName}}
+<!-- ****PROBLEM**** - this is why the random event triggers whole column highlight, instead of single cell -->
             </td>
             <td>
                 {{trump.AlefBeit}}
