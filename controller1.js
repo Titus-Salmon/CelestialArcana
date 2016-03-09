@@ -2,13 +2,18 @@ angular.module('barebonesAngularApp').controller("theThingcontroller1", function
     $scope.blah1 = "what up?";
     this.blah2 = "Numerical Value = ";
     
-    
-
+/** does this work? **/   
+        $scope.bgcolor = true;
+        $scope.setstyle = function () {
+            $scope.customestyle = {
+                "background-color": $scope.bgcolor ? "aqua" : ""};};
+        
+/** does this work? **/
     
 
         $scope.whateverClick1 = function () {
             var carddraw = $scope.MajArcRandomDraw = Math.floor(Math.random() * 22);
-                if (carddraw==0) {alert('you drew the Fool')};
+                if (carddraw==0) {alert('you drew the Fool'); $scope.setstyle();};
                 if (carddraw==1) {alert('you drew the Magician')};
                 if (carddraw==2) {alert('you drew the High Priestess')};
                 if (carddraw==3) {alert('you drew the Empress')};
