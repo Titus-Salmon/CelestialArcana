@@ -7,9 +7,15 @@
     
     <!-- displays value of random # after clicking the "whateverClick1" button ("Draw a card") -->
     {{MajArcRandomDraw}}
-    <!-- displays value of random # after clicking the "whateverClick1" button ("Draw a card") -->
     
-    <input type="button" ng-click="whateverClick1()" value="Draw a card">
+    <!-- displays value of random # after clicking the "whateverClick1" button ("Draw a card") -->
+   
+    <input type="button" ng-click="whateverClick1()" ng-init="whateverClick2=0" value="Draw a card">
+
+{{whateverClick2}}
+
+
+
 
 
 <!-- ng-app designates ROOT ELEMENT of the ANGULAR APPLICATION - typically placed at top in <html> or <body> tag -->
@@ -25,6 +31,12 @@
     
 </head>
 <body ng-controller="theThingcontroller1 as tTc1">
+    
+<!-- clicker trials -->
+   
+   
+    
+<!-- clicker trials -->
 
 <table class = "table table-striped">
     <thead>
@@ -38,18 +50,39 @@
         <th>Celestial Functionary Class</th>
     </tr>
     <tr>
-        <td ng-style="customestyle0">0</td>
+        <td ng-style="foolstyle0">0</td>
         <td>The Fool</td>
-        <td>Mem</td>
-        <td>Water</td>
-        <td>NCP</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
     </tr>
     <tr>
-        <td ng-style="customestyle1">1</td>
+        <td ng-style="magicianstyle1">1</td>
         <td>The Magician</td>
-        <td>Alef</td>
-        <td>Air</td>
-        <td>Precessional "binding force"</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+    </tr>
+    <tr>
+        <td ng-style="priestessstyle1">2</td>
+        <td>The High Priestess</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+    </tr>
+    <tr>
+        <td ng-style="empressstyle1">3</td>
+        <td>The Empress</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+    </tr>
+    <tr>
+        <td ng-style="emperorstyle1">4</td>
+        <td>The Emperor</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
     </tr>
 
         
