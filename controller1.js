@@ -6,7 +6,7 @@ angular.module('barebonesAngularApp').controller("theThingcontroller1", function
         $scope.bgcolor = true;
         $scope.setstyle0 = function () {
             $scope.foolstyle0 = {
-                /** is this a conditional qualifier? **/
+                /** is this a conditional qualifier?, i.e., 'choose "palegreen", or ""'? **/
                 "background-color": $scope.bgcolor ? "palegreen" : ""};};
                 /** is this a conditional qualifier? **/
         $scope.setstyle1 = function () {
@@ -90,49 +90,49 @@ angular.module('barebonesAngularApp').controller("theThingcontroller1", function
             
                 
             
-                if (carddraw==0) {alert('you drew the Fool'); $scope.setstyle0(); yourhandarray.push('The Fool'); MajArcDeckArray.splice(0,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==0) {alert('you drew the Fool'); $scope.setstyle0(); yourhandarray.push('The Fool'); MajArcDeckArray.splice(0,1,'empty0'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==1) {alert('you drew the Magician'); $scope.setstyle1(); yourhandarray.push('The Magician'); MajArcDeckArray.splice(1,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==1) {alert('you drew the Magician'); $scope.setstyle1(); yourhandarray.push('The Magician'); MajArcDeckArray.splice(1,1,'empty1'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==2) {alert('you drew the High Priestess'); $scope.setstyle2(); yourhandarray.push('The High Priestess'); MajArcDeckArray.splice(2,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==2) {alert('you drew the High Priestess'); $scope.setstyle2(); yourhandarray.push('The High Priestess'); MajArcDeckArray.splice(2,1,'empty2'); console.log(yourhandarray); console.log(MajArcDeckArray)};
                 
-                if (carddraw==3) {alert('you drew the Empress'); $scope.setstyle3(); yourhandarray.push('The Empress'); MajArcDeckArray.splice(3,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==3) {alert('you drew the Empress'); $scope.setstyle3(); yourhandarray.push('The Empress'); MajArcDeckArray.splice(3,1,'empty3'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==4) {alert('you drew the Emperor'); $scope.setstyle4(); yourhandarray.push('The Emperor'); MajArcDeckArray.splice(4,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==4) {alert('you drew the Emperor'); $scope.setstyle4(); yourhandarray.push('The Emperor'); MajArcDeckArray.splice(4,1,'empty4'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==5) {alert('you drew the Hierophant'); $scope.setstyle5(); yourhandarray.push('The Hierophant'); MajArcDeckArray.splice(5,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==5) {alert('you drew the Hierophant'); $scope.setstyle5(); yourhandarray.push('The Hierophant'); MajArcDeckArray.splice(5,1,'empty5'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==6) {alert('you drew the Lovers'); $scope.setstyle6(); yourhandarray.push('The Lovers'); MajArcDeckArray.splice(6,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==6) {alert('you drew the Lovers'); $scope.setstyle6(); yourhandarray.push('The Lovers'); MajArcDeckArray.splice(6,1,'empty6'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==7) {alert('you drew the Chariot'); $scope.setstyle7(); yourhandarray.push('The Chariot'); MajArcDeckArray.splice(7,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==7) {alert('you drew the Chariot'); $scope.setstyle7(); yourhandarray.push('The Chariot'); MajArcDeckArray.splice(7,1,'empty7'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==8) {alert('you drew Strength'); $scope.setstyle8(); yourhandarray.push('Strength'); MajArcDeckArray.splice(8,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==8) {alert('you drew Strength'); $scope.setstyle8(); yourhandarray.push('Strength'); MajArcDeckArray.splice(8,1,'empty8'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==9) {alert('you drew the Hermit'); $scope.setstyle9(); yourhandarray.push('The Hermit'); MajArcDeckArray.splice(9,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==9) {alert('you drew the Hermit'); $scope.setstyle9(); yourhandarray.push('The Hermit'); MajArcDeckArray.splice(9,1,'empty9'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==10) {alert('you drew Fortune'); $scope.setstyle10(); yourhandarray.push('Fortune'); MajArcDeckArray.splice(10,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==10) {alert('you drew Fortune'); $scope.setstyle10(); yourhandarray.push('Fortune'); MajArcDeckArray.splice(10,1,'empty10'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==11) {alert('you drew Justice'); $scope.setstyle11(); yourhandarray.push('Justice'); MajArcDeckArray.splice(11,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==11) {alert('you drew Justice'); $scope.setstyle11(); yourhandarray.push('Justice'); MajArcDeckArray.splice(11,1,'empty11'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==12) {alert('you drew the Hanged Man'); $scope.setstyle12(); yourhandarray.push('The Hanged Man'); MajArcDeckArray.splice(12,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==12) {alert('you drew the Hanged Man'); $scope.setstyle12(); yourhandarray.push('The Hanged Man'); MajArcDeckArray.splice(12,1,'empty12'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==13) {alert('you drew Death'); $scope.setstyle13(); yourhandarray.push('Death'); MajArcDeckArray.splice(13,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==13) {alert('you drew Death'); $scope.setstyle13(); yourhandarray.push('Death'); MajArcDeckArray.splice(13,1,'empty13'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==14) {alert('you drew Temperance'); $scope.setstyle14(); yourhandarray.push('Temperance'); MajArcDeckArray.splice(14,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==14) {alert('you drew Temperance'); $scope.setstyle14(); yourhandarray.push('Temperance'); MajArcDeckArray.splice(14,1,'empty14'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==15) {alert('you drew the Devil'); $scope.setstyle15(); yourhandarray.push('The Devil'); MajArcDeckArray.splice(15,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==15) {alert('you drew the Devil'); $scope.setstyle15(); yourhandarray.push('The Devil'); MajArcDeckArray.splice(15,1,'empty15'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==16) {alert('you drew the Tower'); $scope.setstyle16(); yourhandarray.push('The Tower'); MajArcDeckArray.splice(16,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==16) {alert('you drew the Tower'); $scope.setstyle16(); yourhandarray.push('The Tower'); MajArcDeckArray.splice(16,1,'empty16'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==17) {alert('you drew the Star'); $scope.setstyle17(); yourhandarray.push('The Star'); MajArcDeckArray.splice(17,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==17) {alert('you drew the Star'); $scope.setstyle17(); yourhandarray.push('The Star'); MajArcDeckArray.splice(17,1,'empty17'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==18) {alert('you drew the Moon'); $scope.setstyle18(); yourhandarray.push('The Moon'); MajArcDeckArray.splice(18,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==18) {alert('you drew the Moon'); $scope.setstyle18(); yourhandarray.push('The Moon'); MajArcDeckArray.splice(18,1,'empty18'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==19) {alert('you drew the Sun'); $scope.setstyle19(); yourhandarray.push('The Sun'); MajArcDeckArray.splice(19,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==19) {alert('you drew the Sun'); $scope.setstyle19(); yourhandarray.push('The Sun'); MajArcDeckArray.splice(19,1,'empty19'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==20) {alert('you drew Judgment'); $scope.setstyle20(); yourhandarray.push('Judgment'); MajArcDeckArray.splice(20,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==20) {alert('you drew Judgment'); $scope.setstyle20(); yourhandarray.push('Judgment'); MajArcDeckArray.splice(20,1,'empty20'); console.log(yourhandarray); console.log(MajArcDeckArray)};
             
-                if (carddraw==21) {alert('you drew the World'); $scope.setstyle21(); yourhandarray.push('The World'); MajArcDeckArray.splice(21,1); console.log(yourhandarray); console.log(MajArcDeckArray)};
+                if (carddraw==21) {alert('you drew the World'); $scope.setstyle21(); yourhandarray.push('The World'); MajArcDeckArray.splice(21,1,'empty21'); console.log(yourhandarray); console.log(MajArcDeckArray)};
              
                                             };
 });
