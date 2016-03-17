@@ -24,7 +24,15 @@ controllers.controller("theThingcontroller1", function($scope, $http){
                 //Since this $http.post method returns "Object {data: Object, status: 200, config: Object, statusText: "OK"}" in console, the invocation of the Random.org API must be successful. BUT WHY DO I HAVE TO REFRESH PAGE ONCE BEFORE I GET THE RETURN? -ts
           **/
     
+    /** retrieves single random # from Random.org API, and displays in console.log **/
+    $http.get('https://www.random.org/integers/?num=1&min=1&max=22&col=1&base=10&format=plain&rnd=new').then(function (random1){
+        console.log(random1);
+    });
+    /** retrieves single random # from Random.org API, and displays in console.log **/
+    
 /** accessing Random.org API **/
+    
+    
     
     this.blah2 = "Numerical Value = ";
     
@@ -114,12 +122,18 @@ controllers.controller("theThingcontroller1", function($scope, $http){
     
     
     
-      
+      $scope.fetchnumber = function (){
+          $http.get('https://www.random.org/integers/?num=1&min=1&max=22&col=1&base=10&format=plain&rnd=new').then(function (random1){
+        console.log(random1);
+              $scope.whateverClick1(random1.data)
+        });
+      };
     
 
-        $scope.whateverClick1 = function () { 
+        $scope.whateverClick1 = function (randomnumber) { 
            var cardcounter1 = $scope.whateverClick2=$scope.whateverClick2+1;
-            var carddraw = $scope.MajArcRandomDraw = Math.floor(Math.random() * MajArcDeckArray.length);
+            console.log($scope.whateverClick2);
+            var carddraw = $scope.MajArcRandomDraw = randomnumber;
             
                 
             
