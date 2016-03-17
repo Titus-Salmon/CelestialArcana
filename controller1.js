@@ -1,12 +1,38 @@
 'use strict';
 
-angular.module('barebonesAngularApp').controller("theThingcontroller1", function($scope){
+/** setting up modular angular construction **/
+
+var controllers = angular.module('barebonesAngularApp', []);
+
+/** setting up modular angular construction **/
+
+controllers.controller("theThingcontroller1", function($scope, $http){
+    
+    /** accessing Random.org API **/
+    /** using $http.post, since Random.org API apparently only accepts POST format?? From Random.org: "All interaction takes place via JSON-RPC over secure HTTP between the client application (e.g., web site or mobile app) and the RANDOM.ORG service. All invocations must be made via HTTP POST. In particular, HTTP GET is not supported." I tried $http.jsonp but coundn't get it to work. Kept getting an "Uncaught SyntaxError: Unexpected token :" error. -ts **/$http.post('https://api.random.org/json-rpc/1/invoke?callback=JSON_CALLBACK').then(function (random22){
+    /**and logging a JSON callback to the console**/    console.log(random22);
+    });
+    
+    
+        /** Response Codes
+            The HTTP response codes are set as follows:
+
+            If a JSON-RPC request is successful, a HTTP response code 200 is returned.
+            If a JSON-RPC request fails due to a client error (e.g., a malformed request or an attempt to invoke a nonexistant method), a HTTP response code 400 (Bad Request) or 404 (Method Not Found) is returned.
+            If a JSON-RPC request fails due to a server error, a HTTP response code 500 (Internal Server Error) is returned.
+            
+                //Since this $http.post method returns "Object {data: Object, status: 200, config: Object, statusText: "OK"}" in console, the invocation of the Random.org API must be successful. BUT WHY DO I HAVE TO REFRESH PAGE ONCE BEFORE I GET THE RETURN? -ts
+          **/
+    
+/** accessing Random.org API **/
     
     this.blah2 = "Numerical Value = ";
     
 
     
-    /** does this work? -- yes, this is necessary code**/   
+
+    
+    /** defines background color styles for each trump #. every time a trump is drawn, the cell corresponding to that trump# will be highlighted with a specific background color  **/   
         $scope.bgcolor = true;
         $scope.setstyle0 = function () {
             $scope.foolstyle0 = {
@@ -76,7 +102,7 @@ angular.module('barebonesAngularApp').controller("theThingcontroller1", function
         $scope.setstyle21 = function () {
             $scope.worldestyle1 = {
                 "background-color": $scope.bgcolor ? "palegreen" : ""};};
-/** does this work? -- yes, this is necessary code **/
+/** defines background color styles for each trump #. every time a trump is drawn, the cell corresponding to that trump# will be highlighted with a specific background color  **/
     
     
     
@@ -143,3 +169,5 @@ angular.module('barebonesAngularApp').controller("theThingcontroller1", function
              
                                             };
 });
+
+/** now you simply need to make it impossible to draw the same card twice. presumably a function of some sort... or an angular 'listener', or a combo, or blahblahblah **/
