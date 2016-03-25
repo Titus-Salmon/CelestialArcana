@@ -1,58 +1,26 @@
 <!DOCTYPE html>
-
-<!-- "Numerical Value = " -->
-    {{tTc1.blah2}}
-<!-- "Numerical Value = " -->
-
-    
-    <!-- displays value of random # after clicking the "whateverClick1" button ("Draw a card") -->
-    {{MajArcRandomDraw}}
-    <!-- displays value of random # after clicking the "whateverClick1" button ("Draw a card") -->
-   
-<input type="button" ng-click="fetchnumber()" ng-init="whateverClick2=0" value="Draw a card">
-
-    {{whateverClick2}}
-
-
-
-
-
-<!-- ng-app designates ROOT ELEMENT of the ANGULAR APPLICATION - typically placed at top in <html> or <body> tag -->
-<html ng-app="barebonesAngularApp">
-<!-- ng-app designates ROOT ELEMENT of the ANGULAR APPLICATION - typically placed at top in <html> or <body> tag -->
-<head lang="en">
-    <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
-    <script src="app.js"></script>
-    <script src="controller1.js"></script>
-    <script src="cardpicker-ts.js"></script>
-    <script src="ui.js"></script>
-    <script src="calculator.js"></script>
-    
-
+<html>
+  <head>
+    <meta charset="utf-8">
     <title>Titus Salmon | Artist and Author</title>
-    
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700|Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/responsive.css">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
-</head>
-  
+  </head>
   <body>
     <header>
-      <a href="index.html" class="selected" id="logo">
+      <a href="index.html" id="logo">
         <h1>Titus Salmon</h1>
         <h2>Artist and Author</h2>
       </a>
       <nav>
         <ul>
-          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="index.html" class="selected">Portfolio</a></li>
           <li><a href="PublishedBooks.html">Published Books</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-            <li><a href="TarotReading.html">Tarot Reading</a></li>
         </ul>
       </nav>
     </header>
@@ -98,7 +66,4 @@
       </footer>
     </div>
   </body>
-    
-
-
 </html>
