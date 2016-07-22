@@ -3,7 +3,11 @@ GENERAL
 *********************************/
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Garamond', serif;
+}
+
+p {
+  font-family: 'Garamond', serif;
 }
 
 #wrapper {
@@ -43,7 +47,7 @@ header {
 }
 
 h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Garamond', serif;
   margin: 15px 0;
   font-size: 1.75em;
   font-weight: normal;
@@ -191,23 +195,39 @@ body{
 }
 
 /*  green header  */
+/*
 header {
 background: #6ab47b;
 border-color: #599a68;  
 }
+*/
 /*  nav background on mobile  */
+/*
 nav{
   background: #599a68;
 }
+*/
+
+/*  black header  */
+header {
+background: #666666;
+border-color: #4dffff;  
+}
+/*  nav background on mobile  */
+nav{
+  background: #666666;
+}
+
+
 
 /* logo text */
 h1, h2 {
-  color: #fff;
+  color: #e5e5e5;
 }
 
 /*  links  */
 a {
-  color: #6ab47b;
+  color: #4dffff;
 }
 
 
@@ -218,10 +238,19 @@ nav a, nav a:visited {
 
 /*  selected nav link  */
 nav a.selected, nav a:hover {
-  color: #32673f;
+  color: #33cccc;
 }
 
+/*********************************
+error message (suggest.php)
+*********************************/
 
+p.message {
+    background: #ffeca4;
+    border: 1px solid #f16702;
+    padding: 1em;
+    width: 444px;
+}
 
 
 
