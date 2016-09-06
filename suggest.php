@@ -1,16 +1,19 @@
 <?php
 
-
+ob_start();
 $pageTitle="Titus Salmon | Contact"; include ('includes/header.php');?>
-<div id="wrapper">
+<body>
+
 
 <?php
-ob_start();
 
 
 require("includes/vendor/phpmailer/phpmailer/PHPMailerAutoload.php");
+require("includes/vendor/phpmailer/phpmailer/class.phpmailer.php");
+
 
 $mail = new PHPMailer;
+$mail->SMTPDebug =3;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
     
@@ -47,20 +50,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 $email_body .= "Email " . $email . "\n";
                 $email_body .= "Questions/Comments " . $questions_comments . "\n";
 
-
-                $mail->isSMTP();                                      // Set mailer to use SMTP
-                $mail->Host = 'mail.twc.com';  // Specify main and backup SMTP servers
-                $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                $mail->Username = 'myemailaddress';                 // SMTP username
-                $mail->Password = 'myemailpassword';                           // SMTP password
-                $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-                $mail->Port = 587;                                    // TCP port to connect to
+           
+            $mail->IsSMTP();                                      // Set mailer to use SMTP
+                $mail->Host = 'mail.bluehyperion.com';  // Specify main and backup SMTP servers
+//     
 
 
 
                 $mail->setFrom($email, $name);
-                $mail->addAddress('myemailaddress', 'Blue Hyperion Press');     // Add a recipient
-
+                $mail->addAddress('bluehype@bluehyperion.com', 'Blue Hyperion Press');     // Add a recipient
+            
+            
+            
+            
+            
 
                 $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
                 $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
@@ -95,7 +98,7 @@ $section = "suggest";
 
     if (isset($error_message))
     {
-        echo "<p class='message'>" . $error_message . "</p>"; //WHY IS THIS NOT DISPLAYING THE CSS 'message' STYLE, AS SPECIFIED IN CSS/main.css, lines 232-237??? THIS SHOULD WORK, SINCE I AM CALLING include("includes/header.php"); AT THE BEGINNING OF THIS FILE, AND "includes/header.php" LINKS TO CSS/main.css (<link rel="stylesheet" href="CSS/main.css">).
+        echo "<p class='message'>" . $error_message . "</p>"; 
     }
                 
 
@@ -110,19 +113,19 @@ $section = "suggest";
     {            
     ?>
 
-<div class="section page">
-    <div class="wrapper">
-        <h1>Email Blue Hyperion Press</h1>
+
+    
+        <h1 class="h1center">Email Blue Hyperion Press</h1>
         
         
-                    <p>Please complete form to email Blue Hyperion Press with any questions or comments.</p>
+                    <p class="pcenter">Please complete form to email Blue Hyperion Press with any questions or comments.</p>
 
 
 
-                    <form method = "post" action="suggest.php">
-                        <table>
-                            <tr>
-                                <th><label for="name">Name (required)</label></th>
+                    <form class="formcenter" method = "post" action="suggest.php">
+                        <table class="tablecenter">
+                            <tr class>
+                                <th class><label for="name">Name (required)</label></th>
                                 <td><input type="text" id="name" name="name" value="<?php if (isset($name)) {echo htmlspecialchars($name); } ?>"/></td>
                             </tr>
                             <tr>
@@ -144,9 +147,9 @@ $section = "suggest";
                     </form>
 <?php } ?>
                 
-    </div>
-</div>
-</div>
+    
+
+</body>
 
 
 

@@ -1,0 +1,6 @@
+#files & directories to ignore in GithubStaging/CA2-cleanup
+ch1/
+config.php
+StripeCharge.php
+StripeCheckout.html
+StripeCheckout.php

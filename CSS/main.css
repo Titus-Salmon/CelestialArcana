@@ -12,9 +12,17 @@ p {
 
 #wrapper {
  max-width: 940px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 5%;
 }
+
+
+.wrapper2 {
+ 
+  text-align: center;
+  
+}
+
 
 a {
   text-decoration: none;
@@ -24,8 +32,146 @@ img {
   max-width: 100%;
 }
 
-h3 {
-  margin: 0 0 1em 0;
+
+IMG.left3 {
+/*    display: block;*/
+    float: left;
+    position: absolute;
+    left: 10px;
+    padding: 15px 10px 0 10px;
+    display: flex;
+  justify-content: space-between;
+/*    margin: 0 0 10px 10px;*/
+}
+
+
+IMG.center1 {
+/*    display: block;*/
+
+/*
+    margin-left: 33%;
+    margin-right: 33%;
+*/
+
+/*    position: absolute;*/
+    padding: 15px 10px 0 10px;
+    display: flex;
+  justify-content: space-between;
+}
+
+
+IMG.right3 {
+/*    display: block;*/
+    float: right;
+
+    position: absolute;
+    right: 10px;
+
+/*    margin: -300 0 100px 100px;*/
+    padding: 15px 10px 0 10px;
+    display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+padding: 15px 0 0 0;
+}
+
+IMG.displayed2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+padding: 45px 0 0 0;
+}
+
+IMG.left1 {
+    position: relative;
+    left: 0px;
+}
+
+
+
+
+
+IMG.right1 {
+    display: block;
+    position: relative;
+    right: 0px;
+}
+
+IMG.right2 {
+    position: relative;
+/*    display: block;*/
+    margin-left: 900px;
+    margin-right: -300px;
+    margin-top: -300px;
+    padding: 30px 0 300px 0;
+}
+
+
+
+
+
+h1.h1center {
+  text-align: center;
+    color: #474747;
+}
+
+h2.h2center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #474747;
+}
+
+
+h3.h3center {
+  text-align: center;
+    color: #474747;
+}
+
+p.pcenter {
+  text-align: center;
+    color: #474747;
+}
+
+/*
+tr.trcenter {
+  text-align: center;
+}
+
+th.thcenter {
+  text-align: center;
+}
+
+td.tdcenter {
+  text-align: center;
+}
+
+label.labelcenter {
+  text-align: center;
+}
+*/
+
+form.formcenter {
+  text-align: center;
+}
+
+table.tablecenter {
+  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -34,10 +180,14 @@ h3 {
 HEADING
 *********************************/
 
+header.HeaderCenter {
+  text-align: center
+}
+
 header {
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
+  float: auto;
+  margin: auto;
+  padding: auto;
   width: 100%;
 }
 
@@ -49,14 +199,20 @@ header {
 h1 {
   font-family: 'Garamond', serif;
   margin: 15px 0;
-  font-size: 1.75em;
+  font-size: 2.75em;
   font-weight: normal;
   line-height: 0.8em;
 }
 
 h2 {
-font-size: 0.75em;
+font-size: 1.25em;
   margin: -5px 0 0;
+  font-weight: normal;
+}
+
+h3 {
+font-size: 1em;
+  margin: 5px 0 0;
   font-weight: normal;
 }
 
@@ -68,23 +224,42 @@ NAVIGATION
 
 nav {
   text-align: center;
+
   padding: 10px 0;
-  margin: 20px 0 0;
+/*  margin: 20px 0 0;*/
+
   }
 
 nav ul {
+    text-align: center;
   list-style: none;
   margin: 0 10px;
   padding: 0;
+}
+
+nav ul.ulCenter {
+text-align: center;
+}
+
+ul.ulCenter {
+text-align: center;
 }
 
 nav li {
   display: inline-block;
 }
 
+nav li.liCenter {
+  text-align: center;
+}
+
 nav a {
   font-weight: 800;
   padding: 15px 10px;
+}
+
+nav a.aCenter {
+  text-align: center;
 }
 
 
@@ -98,7 +273,7 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  color: #474747;
 }
 
 .social-icon {
@@ -113,6 +288,7 @@ footer {
 PAGE: PORTFOLIO
 *********************************/
 
+/*
 #gallery {
   margin: 0;
   padding: 0;
@@ -133,6 +309,7 @@ PAGE: PORTFOLIO
   font-size: 0.75em;
   color: #bdc3c7
 }
+*/
 
 
 
@@ -141,8 +318,10 @@ PAGE: ABOUT
 *********************************/
 
 .profile-photo {
-  display:inline-block;
-  margin: 5% 45% 5% 45%;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px 30px 0px;
   
 }
 
@@ -190,8 +369,8 @@ COLORS
 
 /*  site body */
 body{
-  background-color: #fff;
-  color: #999;
+  background-color: #D3D3D3;
+  color: #474747;
 }
 
 /*  green header  */
@@ -210,30 +389,48 @@ nav{
 
 /*  black header  */
 header {
-background: #666666;
-border-color: #4dffff;  
+padding: 5px 0 8px 0;
+background: #474747;
+/*border-color: #4dffff;*/
+border-bottom: 5px solid #949494;
 }
 /*  nav background on mobile  */
 nav{
-  background: #666666;
+  background: #474747;
+/*    padding: 0px 0px 5px 0px;*/
 }
 
 
 
 /* logo text */
-h1, h2 {
+h1, h2, h3 {
   color: #e5e5e5;
 }
 
 /*  links  */
+
 a {
-  color: #4dffff;
+  color: #0000cc;
 }
+
+/*
+a {
+  color: #ff0000;
+}
+*/
+
+/*
+a {
+  color: #4dffff; 
+}
+*/
 
 
 /*  nav links  */
 nav a, nav a:visited {
-  color: #fff;
+/*    background: #CAE1FF;*/
+color: #e5e5e5;
+text-decoration: underline;
 }
 
 /*  selected nav link  */
@@ -252,5 +449,56 @@ p.message {
     width: 444px;
 }
 
+/*********************************
+turn.js css code
+*********************************/
 
+#magazine{
+    width: 800px;
+    height: 400px;
+}
+#magazine .turn-page{
+    background-color:#ccc;
+}
+
+
+/*********************************
+image overlap issue
+*********************************/
+
+
+
+/*
+#expando1 ul {
+		margin:0;
+		padding:0;
+		list-style-type:none;
+	}
+*/
+	
+	#expando1 ul li {
+		
+		float:left;
+        list-style-type:none;
+	}
+	
+/*
+	#expando1 li span {
+		
+		height:95px;
+		width:95px;
+		background:#f39;
+		
+	}
+*/
+	
+	
+	#expando1 ul li {
+/*        simply modify % according to # of images in row (i.e., 3=33%; 4=25%, etc.)*/
+		width: 33%;
+		background:#ccc;
+		margin:0 0 10px 0;
+/*		text-align:center;*/
+        
+	}
 
