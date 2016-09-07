@@ -3,44 +3,46 @@ GENERAL
 *********************************/
 
 body {
-  font-family: 'Garamond', serif;
+/*	font-family: 'Garamond', serif;*/
+	font-family: 'News Gothic MT';
 }
 
 p {
-  font-family: 'Garamond', serif;
+/*	font-family: 'Garamond', serif;*/
+	font-family: 'News Gothic MT';
 }
 
 #wrapper {
- max-width: 940px;
-  margin: auto;
-  padding: 0 5%;
+	max-width: 940px;
+	margin: auto;
+	padding: 0 5%;
 }
 
 
 .wrapper2 {
  
-  text-align: center;
+	text-align: center;
   
 }
 
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 
 IMG.left3 {
 /*    display: block;*/
-    float: left;
-    position: absolute;
-    left: 10px;
-    padding: 15px 10px 0 10px;
-    display: flex;
-  justify-content: space-between;
+	float: left;
+	position: absolute;
+	left: 10px;
+	padding: 15px 10px 0 10px;
+	display: flex;
+	justify-content: space-between;
 /*    margin: 0 0 10px 10px;*/
 }
 
@@ -54,23 +56,23 @@ IMG.center1 {
 */
 
 /*    position: absolute;*/
-    padding: 15px 10px 0 10px;
-    display: flex;
-  justify-content: space-between;
+	padding: 15px 10px 0 10px;
+	display: flex;
+	justify-content: space-between;
 }
 
 
 IMG.right3 {
 /*    display: block;*/
-    float: right;
+	float: right;
 
-    position: absolute;
-    right: 10px;
+	position: absolute;
+	right: 10px;
 
 /*    margin: -300 0 100px 100px;*/
-    padding: 15px 10px 0 10px;
-    display: flex;
-  justify-content: space-between;
+	padding: 15px 10px 0 10px;
+	display: flex;
+	justify-content: space-between;
 }
 
 
@@ -79,24 +81,24 @@ IMG.right3 {
 
 
 IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-padding: 15px 0 0 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px 0 0 0;
 }
 
 IMG.displayed2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-padding: 45px 0 0 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 45px 0 0 0;
 }
 
 IMG.left1 {
-    position: relative;
-    left: 0px;
+	position: relative;
+	left: 0px;
 }
 
 
@@ -104,18 +106,18 @@ IMG.left1 {
 
 
 IMG.right1 {
-    display: block;
-    position: relative;
-    right: 0px;
+	display: block;
+	position: relative;
+	right: 0px;
 }
 
 IMG.right2 {
-    position: relative;
-/*    display: block;*/
-    margin-left: 900px;
-    margin-right: -300px;
-    margin-top: -300px;
-    padding: 30px 0 300px 0;
+	position: relative;
+	/*    display: block;*/
+	margin-left: 900px;
+	margin-right: -300px;
+	margin-top: -300px;
+	padding: 30px 0 300px 0;
 }
 
 
@@ -123,27 +125,27 @@ IMG.right2 {
 
 
 h1.h1center {
-  text-align: center;
-    color: #474747;
+	text-align: center;
+	color: #474747;
 }
 
 h2.h2center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: #474747;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #474747;
 }
 
 
 h3.h3center {
-  text-align: center;
-    color: #474747;
+	text-align: center;
+	color: #474747;
 }
 
 p.pcenter {
-  text-align: center;
-    color: #474747;
+	text-align: center;
+	color: #474747;
 }
 
 /*
@@ -165,13 +167,13 @@ label.labelcenter {
 */
 
 form.formcenter {
-  text-align: center;
+	text-align: center;
 }
 
 table.tablecenter {
-  text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -181,39 +183,40 @@ HEADING
 *********************************/
 
 header.HeaderCenter {
-  text-align: center
+	text-align: center
 }
 
 header {
-  float: auto;
-  margin: auto;
-  padding: auto;
-  width: 100%;
+	float: auto;
+	margin: auto;
+	padding: auto;
+	width: 100%;
 }
 
 #logo {
-  text-align: center;
-  margin: 0;
+	text-align: center;
+	margin: 0;
 }
 
 h1 {
-  font-family: 'Garamond', serif;
-  margin: 15px 0;
-  font-size: 2.75em;
-  font-weight: normal;
-  line-height: 0.8em;
+/*	font-family: 'Garamond', serif;*/
+	font-family: 'News Gothic MT';
+	margin: 15px 0;
+	font-size: 2.75em;
+	font-weight: normal;
+	line-height: 0.8em;
 }
 
 h2 {
-font-size: 1.25em;
-  margin: -5px 0 0;
-  font-weight: normal;
+	font-size: 1.25em;
+	margin: -5px 0 0;
+	font-weight: normal;
 }
 
 h3 {
-font-size: 1em;
-  margin: 5px 0 0;
-  font-weight: normal;
+	font-size: 1em;
+	margin: 5px 0 0;
+	font-weight: normal;
 }
 
 
@@ -223,43 +226,43 @@ NAVIGATION
 *********************************/
 
 nav {
-  text-align: center;
+	text-align: center;
 
-  padding: 10px 0;
+	padding: 10px 0;
 /*  margin: 20px 0 0;*/
 
   }
 
 nav ul {
-    text-align: center;
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
+	text-align: center;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
 }
 
 nav ul.ulCenter {
-text-align: center;
+	text-align: center;
 }
 
 ul.ulCenter {
-text-align: center;
+	text-align: center;
 }
 
 nav li {
-  display: inline-block;
+	display: inline-block;
 }
 
 nav li.liCenter {
-  text-align: center;
+	text-align: center;
 }
 
 nav a {
-  font-weight: 800;
-  padding: 15px 10px;
+	font-weight: 800;
+	padding: 15px 10px;
 }
 
 nav a.aCenter {
-  text-align: center;
+	text-align: center;
 }
 
 
@@ -269,17 +272,17 @@ FOOTER
 *********************************/
 
 footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-  color: #474747;
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #474747;
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5 px;
+	width: 20px;
+	height: 20px;
+	margin: 0 5 px;
 }
 
 
@@ -318,10 +321,10 @@ PAGE: ABOUT
 *********************************/
 
 .profile-photo {
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px 0px 30px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px 0px 30px 0px;
   
 }
 
@@ -334,31 +337,31 @@ PAGE: CONTACT
 *********************************/
 
 .contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
 }
 
 .contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
 }
 
 .contact-info li.phone a {
-  background-image: url('../img/phone.png');
+	background-image: url('../img/phone.png');
 }
 
 .contact-info li.mail a {
-  background-image: url('../img/mail.png');
+	background-image: url('../img/mail.png');
 }
 
 .contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+	background-image: url('../img/twitter.png');
 }
 
 
@@ -369,8 +372,8 @@ COLORS
 
 /*  site body */
 body{
-  background-color: #D3D3D3;
-  color: #474747;
+	background-color: #D3D3D3;
+	color: #474747;
 }
 
 /*  green header  */
@@ -389,14 +392,14 @@ nav{
 
 /*  black header  */
 header {
-padding: 5px 0 8px 0;
-background: #474747;
-/*border-color: #4dffff;*/
-border-bottom: 5px solid #949494;
+	padding: 5px 0 8px 0;
+	background: #474747;
+	/*border-color: #4dffff;*/
+	border-bottom: 5px solid #949494;
 }
 /*  nav background on mobile  */
 nav{
-  background: #474747;
+	background: #474747;
 /*    padding: 0px 0px 5px 0px;*/
 }
 
@@ -404,13 +407,13 @@ nav{
 
 /* logo text */
 h1, h2, h3 {
-  color: #e5e5e5;
+	color: #e5e5e5;
 }
 
 /*  links  */
 
 a {
-  color: #0000cc;
+	color: #0000cc;
 }
 
 /*
@@ -429,13 +432,13 @@ a {
 /*  nav links  */
 nav a, nav a:visited {
 /*    background: #CAE1FF;*/
-color: #e5e5e5;
-text-decoration: underline;
+	color: #e5e5e5;
+	text-decoration: underline;
 }
 
 /*  selected nav link  */
 nav a.selected, nav a:hover {
-  color: #33cccc;
+	color: #33cccc;
 }
 
 /*********************************
@@ -443,10 +446,10 @@ error message (suggest.php)
 *********************************/
 
 p.message {
-    background: #ffeca4;
-    border: 1px solid #f16702;
-    padding: 1em;
-    width: 444px;
+	background: #ffeca4;
+	border: 1px solid #f16702;
+	padding: 1em;
+	width: 444px;
 }
 
 /*********************************
@@ -454,11 +457,11 @@ turn.js css code
 *********************************/
 
 #magazine{
-    width: 800px;
-    height: 400px;
+	width: 800px;
+	height: 400px;
 }
 #magazine .turn-page{
-    background-color:#ccc;
+	background-color:#ccc;
 }
 
 
@@ -476,10 +479,10 @@ image overlap issue
 	}
 */
 	
-	#expando1 ul li {
+#expando1 ul li {
 		
-		float:left;
-        list-style-type:none;
+	float:left;
+	list-style-type:none;
 	}
 	
 /*
@@ -493,11 +496,11 @@ image overlap issue
 */
 	
 	
-	#expando1 ul li {
+#expando1 ul li {
 /*        simply modify % according to # of images in row (i.e., 3=33%; 4=25%, etc.)*/
-		width: 33%;
-		background:#ccc;
-		margin:0 0 10px 0;
+	width: 33%;
+	background:#ccc;
+	margin:0 0 10px 0;
 /*		text-align:center;*/
         
 	}
